@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "XTPDFContainerViewController.h"
 
 @interface ViewController ()
 
@@ -14,14 +15,23 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    NSString * path = [[NSBundle mainBundle] pathForResource:@"demo"
+                                                     ofType:@"pdf"];
+    
+    NSData * data = [NSData dataWithContentsOfFile:path];
+    
+    XTPDFContainerViewController * vc = [[XTPDFContainerViewController alloc] initWithFileData:data];
+    [vc.view setFrame:self.view.frame];
+    [self addChildViewController:vc];
+    [self.view addSubview:vc.view];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end

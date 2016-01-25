@@ -13,6 +13,14 @@
 		E916C0071C56775000E468FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E916C0051C56775000E468FA /* Main.storyboard */; };
 		E916C0091C56775000E468FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E916C0081C56775000E468FA /* Assets.xcassets */; };
 		E916C00C1C56775000E468FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E916C00A1C56775000E468FA /* LaunchScreen.storyboard */; };
+		E916C0211C56794F00E468FA /* XTPDFFileModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E916C0201C56794F00E468FA /* XTPDFFileModel.m */; };
+		E916C0241C56798200E468FA /* XTPDFCurrentPageBorder.m in Sources */ = {isa = PBXBuildFile; fileRef = E916C0231C56798200E468FA /* XTPDFCurrentPageBorder.m */; };
+		E916C0271C567C5600E468FA /* XTPDFMiniatureCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E916C0261C567C5600E468FA /* XTPDFMiniatureCustomCell.m */; };
+		E916C02A1C567C8F00E468FA /* XTPDFPageNumberBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = E916C0291C567C8F00E468FA /* XTPDFPageNumberBackgroundView.m */; };
+		E916C02D1C567D1400E468FA /* XTPDFTiledView.m in Sources */ = {isa = PBXBuildFile; fileRef = E916C02C1C567D1400E468FA /* XTPDFTiledView.m */; };
+		E916C0301C567DF800E468FA /* XTPDFScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = E916C02F1C567DF800E468FA /* XTPDFScrollView.m */; };
+		E916C0331C56800900E468FA /* XTPDFContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E916C0321C56800900E468FA /* XTPDFContainerViewController.m */; };
+		E916C03C1C56856200E468FA /* demo.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E916C03B1C56856200E468FA /* demo.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +34,21 @@
 		E916C0081C56775000E468FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E916C00B1C56775000E468FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E916C00D1C56775000E468FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E916C01F1C56794F00E468FA /* XTPDFFileModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XTPDFFileModel.h; path = Source/Model/XTPDFFileModel.h; sourceTree = "<group>"; };
+		E916C0201C56794F00E468FA /* XTPDFFileModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XTPDFFileModel.m; path = Source/Model/XTPDFFileModel.m; sourceTree = "<group>"; };
+		E916C0221C56798200E468FA /* XTPDFCurrentPageBorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XTPDFCurrentPageBorder.h; path = Source/View/XTPDFCurrentPageBorder.h; sourceTree = "<group>"; };
+		E916C0231C56798200E468FA /* XTPDFCurrentPageBorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XTPDFCurrentPageBorder.m; path = Source/View/XTPDFCurrentPageBorder.m; sourceTree = "<group>"; };
+		E916C0251C567C5600E468FA /* XTPDFMiniatureCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XTPDFMiniatureCustomCell.h; path = Source/View/XTPDFMiniatureCustomCell.h; sourceTree = "<group>"; };
+		E916C0261C567C5600E468FA /* XTPDFMiniatureCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XTPDFMiniatureCustomCell.m; path = Source/View/XTPDFMiniatureCustomCell.m; sourceTree = "<group>"; };
+		E916C0281C567C8F00E468FA /* XTPDFPageNumberBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XTPDFPageNumberBackgroundView.h; path = Source/View/XTPDFPageNumberBackgroundView.h; sourceTree = "<group>"; };
+		E916C0291C567C8F00E468FA /* XTPDFPageNumberBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XTPDFPageNumberBackgroundView.m; path = Source/View/XTPDFPageNumberBackgroundView.m; sourceTree = "<group>"; };
+		E916C02B1C567D1400E468FA /* XTPDFTiledView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XTPDFTiledView.h; path = Source/View/XTPDFTiledView.h; sourceTree = "<group>"; };
+		E916C02C1C567D1400E468FA /* XTPDFTiledView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XTPDFTiledView.m; path = Source/View/XTPDFTiledView.m; sourceTree = "<group>"; };
+		E916C02E1C567DF800E468FA /* XTPDFScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XTPDFScrollView.h; path = Source/View/XTPDFScrollView.h; sourceTree = "<group>"; };
+		E916C02F1C567DF800E468FA /* XTPDFScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XTPDFScrollView.m; path = Source/View/XTPDFScrollView.m; sourceTree = "<group>"; };
+		E916C0311C56800900E468FA /* XTPDFContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XTPDFContainerViewController.h; path = Source/Controller/XTPDFContainerViewController.h; sourceTree = "<group>"; };
+		E916C0321C56800900E468FA /* XTPDFContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XTPDFContainerViewController.m; path = Source/Controller/XTPDFContainerViewController.m; sourceTree = "<group>"; };
+		E916C03B1C56856200E468FA /* demo.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = demo.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +81,8 @@
 		E916BFFB1C56775000E468FA /* PDFViewer */ = {
 			isa = PBXGroup;
 			children = (
+				E916C03B1C56856200E468FA /* demo.pdf */,
+				E916C0131C5677BA00E468FA /* Source */,
 				E916BFFF1C56775000E468FA /* AppDelegate.h */,
 				E916C0001C56775000E468FA /* AppDelegate.m */,
 				E916C0021C56775000E468FA /* ViewController.h */,
@@ -77,6 +102,51 @@
 				E916BFFD1C56775000E468FA /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E916C0131C5677BA00E468FA /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				E916C01E1C56793D00E468FA /* Controller */,
+				E916C01C1C56793300E468FA /* Model */,
+				E916C01D1C56793800E468FA /* View */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		E916C01C1C56793300E468FA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E916C01F1C56794F00E468FA /* XTPDFFileModel.h */,
+				E916C0201C56794F00E468FA /* XTPDFFileModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		E916C01D1C56793800E468FA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E916C0221C56798200E468FA /* XTPDFCurrentPageBorder.h */,
+				E916C0231C56798200E468FA /* XTPDFCurrentPageBorder.m */,
+				E916C0251C567C5600E468FA /* XTPDFMiniatureCustomCell.h */,
+				E916C0261C567C5600E468FA /* XTPDFMiniatureCustomCell.m */,
+				E916C0281C567C8F00E468FA /* XTPDFPageNumberBackgroundView.h */,
+				E916C0291C567C8F00E468FA /* XTPDFPageNumberBackgroundView.m */,
+				E916C02B1C567D1400E468FA /* XTPDFTiledView.h */,
+				E916C02C1C567D1400E468FA /* XTPDFTiledView.m */,
+				E916C02E1C567DF800E468FA /* XTPDFScrollView.h */,
+				E916C02F1C567DF800E468FA /* XTPDFScrollView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		E916C01E1C56793D00E468FA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E916C0311C56800900E468FA /* XTPDFContainerViewController.h */,
+				E916C0321C56800900E468FA /* XTPDFContainerViewController.m */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E916C00C1C56775000E468FA /* LaunchScreen.storyboard in Resources */,
+				E916C03C1C56856200E468FA /* demo.pdf in Resources */,
 				E916C0091C56775000E468FA /* Assets.xcassets in Resources */,
 				E916C0071C56775000E468FA /* Main.storyboard in Resources */,
 			);
@@ -151,7 +222,14 @@
 			files = (
 				E916C0041C56775000E468FA /* ViewController.m in Sources */,
 				E916C0011C56775000E468FA /* AppDelegate.m in Sources */,
+				E916C0211C56794F00E468FA /* XTPDFFileModel.m in Sources */,
+				E916C0301C567DF800E468FA /* XTPDFScrollView.m in Sources */,
 				E916BFFE1C56775000E468FA /* main.m in Sources */,
+				E916C0271C567C5600E468FA /* XTPDFMiniatureCustomCell.m in Sources */,
+				E916C02A1C567C8F00E468FA /* XTPDFPageNumberBackgroundView.m in Sources */,
+				E916C0331C56800900E468FA /* XTPDFContainerViewController.m in Sources */,
+				E916C02D1C567D1400E468FA /* XTPDFTiledView.m in Sources */,
+				E916C0241C56798200E468FA /* XTPDFCurrentPageBorder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,7 +343,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PDFViewer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.xtasy64.PDFViewer.PDFViewer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xtasy64.PDFViewer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -276,7 +354,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PDFViewer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.xtasy64.PDFViewer.PDFViewer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xtasy64.PDFViewer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -300,6 +378,7 @@
 				E916C0121C56775000E468FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
