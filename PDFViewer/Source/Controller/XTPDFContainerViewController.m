@@ -26,7 +26,7 @@ NSString * XTPDFMiniatureCustomCellIdentifier = @"XTPDFMiniatureCustomCell";
     NSString * identifier;
     NSTimer * timerToHidePageNumber;
     UILabel * pageNumberLabel;
-    UIView * pageNumberBackgroundView;
+    XTPDFPageNumberBackgroundView * pageNumberBackgroundView;
     NSInteger _pageNumber;
     CGSize oldSize;
 }
@@ -233,15 +233,14 @@ NSString * XTPDFMiniatureCustomCellIdentifier = @"XTPDFMiniatureCustomCell";
 
 #pragma mark - navigation handlers and helpers
 
+//TODO: refactor magic numbers
 - (void)tap:(UIGestureRecognizer *)recognizer
 {
-    BOOL handleOnlyBarZone = NO;
     BOOL handleOnlyPreviewZone = NO;
     
     if (!self.miniaturesView.isHidden)
     {
         [self changeMiniaturesViewState];
-        handleOnlyBarZone = YES;
     }
     
     CGPoint location = [recognizer locationInView:self.view];
@@ -254,13 +253,12 @@ NSString * XTPDFMiniatureCustomCellIdentifier = @"XTPDFMiniatureCustomCell";
     
     if (squareNumber >= 63)
     {
-        if (!handleOnlyBarZone)
-            [self handle:XTPDFNavigationShowPreviews];
+        [self handle:XTPDFNavigationShowPreviews];
         return;
     }
     
     
-    if (handleOnlyBarZone || handleOnlyPreviewZone)
+    if (handleOnlyPreviewZone)
     {
         return;
     }
@@ -346,7 +344,7 @@ NSString * XTPDFMiniatureCustomCellIdentifier = @"XTPDFMiniatureCustomCell";
  -1 if something went wrong (in fact cannot occure)
  */
 
-- (NSUInteger)squareNumberByPoint:(CGPoint)point
+- (NSInteger)squareNumberByPoint:(CGPoint)point
 {
     NSUInteger piecesNumber = 9; // the screen is splitted into 9 * 9 pieces;
     CGFloat squareWidth = self.view.frame.size.width / piecesNumber;
